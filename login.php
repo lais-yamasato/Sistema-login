@@ -1,31 +1,32 @@
 <?php
+session_start();
 include_once('config.php');
 
 $mensagem = "";
-$usuario_logado = null;
 
 if (isset($_POST['submit'])){
     $email = $_POST['email'];
     $senha = $_POST['senha'];
-    
-    // Busca o usuário
+
     $sql = "SELECT * FROM usuarios WHERE email = :email";
     $stmt = $conexao->prepare($sql);
     $stmt->bindParam(':email', $email);
     $stmt->execute();
-    
+
     $usuario = $stmt->fetch(PDO::FETCH_ASSOC);
-    
-    // Verifica senha
+
     if ($usuario && password_verify($senha, $usuario['senha'])) {
-        $usuario_logado = $usuario;
+        $_SESSION['usuario'] = $usuario; 
+        header("Location: dashboard.php");  // Redireciona para o painel
+        exit;
     } else {
-        $mensagem = "<div style='color: red; padding: 10px; background: rgba(255,0,0,0.1); border-radius: 5px; margin: 10px 0;'>
-                        ❌ E-mail ou senha incorretos!
-                     </div>";
+        $mensagem = "<div style='color:red;background:#ff000022;padding:10px;border-radius:5px;margin:10px 0;'>
+            ❌ E-mail ou senha incorretos!
+        </div>";
     }
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -168,7 +169,7 @@ if (isset($_POST['submit'])){
     </style>
 </head>
 <body>
-    <?php if ($usuario_logado): ?>
+    <?php if (!empty($usuario_logado)): ?>
         <!-- TELA DE SUCESSO -->
         <div class="login-container success-box">
             <h1>✅ Login realizado!</h1>
@@ -205,7 +206,6 @@ if (isset($_POST['submit'])){
             </form>
             
             <div class="links">
-                <a href="#">Esqueceu a senha?</a> | 
                 <a href="formulario.php">Cadastre-se</a>
             </div>
         </div>

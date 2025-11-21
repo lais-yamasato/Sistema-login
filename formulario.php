@@ -61,18 +61,23 @@ if (isset($_POST['submit'])){
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(to right, rgb(20,147,220), rgb(17,54,71));
+            background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
         }
+        
         .box{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            max-width: 450px;       /* Limite para telas grandes */
+            width: 90%;             /* Ocupa 90% da tela em dispositivos pequenos */
+            margin: 40px auto;      /* Centraliza sem position absolute */
             background-color: black;
-            padding: 15px;
+            padding: 20px;
             border-radius: 15px;
-            width: 25%;
             color: white;
+        }
+        /* Para evitar campos colados */
+        .inputBox{
+            margin-bottom: 20px;
         }
         fieldset{
             border: 3px solid dodgerblue;
@@ -118,7 +123,7 @@ if (isset($_POST['submit'])){
             font-size: 15px;
         }
         #submit{
-            background-image: linear-gradient(to right, rgb(20,147,220), rgb(31, 155, 212));
+            background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             width: 100%;
             border: none;
             padding: 15px;
@@ -128,7 +133,7 @@ if (isset($_POST['submit'])){
             border-radius: 10px;
         }
         #submit:hover{
-            background-image: linear-gradient(to right, rgb(0,80,172), rgb(80,19,195));
+            background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
         .links{
             text-align: center;
