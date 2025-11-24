@@ -250,10 +250,10 @@ Este projeto está sob a licença MIT. Sinta-se livre para usar, modificar e dis
 
 ## 👩‍💻 Autora
 
-Desenvolvido com 💜 por **Laís Yamasato**
+Desenvolvido com 💜 por **Lais Yamasato**
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/lais-yamasato)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/lais-yamasato-1b4843215)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/lais-yamasato-1b4843215/)
 
 ---
 
@@ -262,7 +262,7 @@ Desenvolvido com 💜 por **Laís Yamasato**
 Encontrou algum bug? Tem alguma sugestão?
 
 - 🐛 Abra uma [issue](https://github.com/lais-yamasato/Sistema-login/issues)
-- 💬 Entre em contato via [LinkedIn](https://linkedin.com/in/lais-yamasato)
+- 💬 Entre em contato via [LinkedIn](https://www.linkedin.com/in/lais-yamasato-1b4843215/)
 
 ---
 
