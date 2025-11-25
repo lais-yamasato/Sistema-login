@@ -27,11 +27,14 @@ $usuarios = $query->fetchAll(PDO::FETCH_ASSOC);
             background: #f4f4f4;
             margin: 0;
             padding: 20px;
+            background: 
+            linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+            url('dog2.jpg') center/cover no-repeat;
         }
 
         h2 {
             text-align: center;
-            color: #333;
+            color: #ffffffff;
         }
 
         table {
@@ -45,7 +48,7 @@ $usuarios = $query->fetchAll(PDO::FETCH_ASSOC);
         }
 
         th {
-            background: #4CAF50;
+            background: linear-gradient(135deg, #2618ecff, #63b1f0ff);
             color: white;
             padding: 12px;
             text-align: left;
@@ -62,7 +65,7 @@ $usuarios = $query->fetchAll(PDO::FETCH_ASSOC);
 
         a.btn {
             padding: 6px 10px;
-            background: #2196F3;
+            background: #28f321ff;
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -77,7 +80,7 @@ $usuarios = $query->fetchAll(PDO::FETCH_ASSOC);
             display: block;
             width: fit-content;
             margin: 20px auto;
-            background: #555;
+            background: #1a9c25ff;
             color: #fff;
             padding: 10px 16px;
             border-radius: 6px;

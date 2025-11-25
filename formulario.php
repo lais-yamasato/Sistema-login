@@ -1,7 +1,6 @@
 <?php
 include_once('config.php');
 
-// Variável para mensagem
 $mensagem = "";
 
 if (isset($_POST['submit'])){
@@ -64,30 +63,39 @@ if (isset($_POST['submit'])){
             background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             margin: 0;
             padding: 20px;
+            background: 
+            linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+            url('dogs.jpg') center/cover no-repeat;
         }
         
         .box{
-            max-width: 450px;       /* Limite para telas grandes */
-            width: 90%;             /* Ocupa 90% da tela em dispositivos pequenos */
-            margin: 40px auto;      /* Centraliza sem position absolute */
-            background-color: black;
+            max-width: 450px;       
+            width: 90%;             
+            margin: 40px auto;      
+            background-color: white;
             padding: 20px;
             border-radius: 15px;
-            color: white;
+            color: black;
         }
-        /* Para evitar campos colados */
         .inputBox{
             margin-bottom: 20px;
         }
-        fieldset{
-            border: 3px solid dodgerblue;
+        fieldset {
+        border: 3px solid transparent;
+        border-radius: 8px;
+        padding: 20px;
+        background:
+        linear-gradient(white, white) padding-box,
+        linear-gradient(135deg, #667eea 0%, #764ba2 100%) border-box;
         }
+
         legend{
-            border: 1px solid dodgerblue;
+            border: 1px;
             padding: 10px;
             text-align: center;
-            background-color: dodgerblue;
+            background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border-radius:8px;
+            color: white;
         }
         .inputBox{
             position: relative;
@@ -95,9 +103,9 @@ if (isset($_POST['submit'])){
         .inputUser{
             background: none;
             border: none;
-            border-bottom: 1px solid white;
+            border-bottom: 1px solid black;
             outline: none;
-            color: white;
+            color: black;
             font-size: 15px;
             width: 100%;
             letter-spacing: 2px;
@@ -116,11 +124,17 @@ if (isset($_POST['submit'])){
             color: dodgerblue;
         }
         #data_nascimento{
-            border: none;
-            padding: 8px;
-            border-radius: 10px;
+            width: 50%;
+            padding: 10px;
+            border: 2px solid #764ba2;
+            border-radius: 8px;
             outline: none;
             font-size: 15px;
+            color: #333;
+        }
+        #data_nascimento:focus{
+            border-color: #667eea;
+            box-shadow: 0 0 5px rgba(118, 75, 162, 0.5);
         }
         #submit{
             background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -153,7 +167,7 @@ if (isset($_POST['submit'])){
     <div class="box">
         <form action="" method="POST">
             <fieldset>
-            <legend><b>Formulário de Clientes</b></legend>
+            <legend><b>Formulário de Cadastros</b></legend>
             
             <?php echo $mensagem; ?>
             

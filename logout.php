@@ -19,6 +19,9 @@ session_destroy();
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background: 
+            linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+            url('dog3.jpg') center/cover no-repeat;
         }
         .box {
             background: white;
@@ -52,7 +55,7 @@ session_destroy();
 <body>
 
 <div class="box">
-    <h2>Sessão encerrada</h2>
+    <h2>❌Sessão encerrada</h2>
     <p>Você saiu do sistema com sucesso.</p>
     <a href="login.php"><button>Voltar ao Login</button></a>
 </div>

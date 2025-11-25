@@ -58,8 +58,11 @@ if (!$usuario) {
     <style>
         body {
             font-family: Arial;
-            background: #eef2f3;
+            background: #8ab8ecff;
             padding: 20px;
+            background: 
+            linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+            url('dog2.jpg') center/cover no-repeat;
         }
         .container {
             width: 400px;
@@ -72,14 +75,14 @@ if (!$usuario) {
         label {
             font-weight: bold;
             margin-top: 10px;
-            display: block;
+            display: block; 
         }
         input {
-            width: 100%;
+            width: 95%;
             padding: 8px;
             margin-top: 5px;
             border-radius: 6px;
-            border: 1px solid #888;
+            border: 1px solid #000000ff;
         }
         button {
             margin-top: 15px;

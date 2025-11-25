@@ -42,12 +42,15 @@ if (isset($_POST['submit'])){
 
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-        }
+            background: 
+                linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+                url('dogs.jpg') center/cover no-repeat;
+}
+        
 
         .login-container {
             background: white;
@@ -190,8 +193,8 @@ if (isset($_POST['submit'])){
     <?php else: ?>
         <!-- FORMULÁRIO DE LOGIN -->
         <div class="login-container">
-            <h1>Bem-vindo</h1>
-            <p>Faça login para continuar</p>
+            <h1>Tamagotchi</h1>
+            <p>Bem vindos - Faça login para continuar</p>
             
             <?php echo $mensagem; ?>
             
